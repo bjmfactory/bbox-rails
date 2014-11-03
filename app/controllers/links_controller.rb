@@ -10,6 +10,9 @@ def create
   redirect_to links_path
 end
 
+def show
+  @link = Link.find(params[:id])
+end
 
 def index
   @links = Link.all
