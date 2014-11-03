@@ -1,0 +1,13 @@
+<h1>Link Index</h1>
+
+<div>
+  <% @links.each do |link| %>
+  <p>
+    <%= link_to link.title, link.url%>
+  </p>
+  <% end %>
+  <hr>
+  <p>
+    <%= link_to 'new link', new_link_path %>
+  </p>
+</div>
