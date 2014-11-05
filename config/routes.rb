@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :boxes, :links
 
-  root 'links#index'
+  root 'boxes#index'
 
 end
