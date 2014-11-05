@@ -7,5 +7,7 @@ class BoxesController < ApplicationController
 
   def create
     render plain: params[:box].inspect
+  def show
+    @box = Box.find(params[:id])
   end
 end
