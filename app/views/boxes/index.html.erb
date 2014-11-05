@@ -1,2 +1,24 @@
-<h1>Hello, Rails!</h1>
-<p>This is the boxes#index page.</p>
+<h1>Box Index</h1>
+
+<% @boxes.each do |box| %>
+
+<div class="box">
+  <p>
+    <%= link_to box.title1, box.url1%>
+  </p>
+
+  <p>
+    <%= link_to box.title2, box.url2%>
+  </p>
+
+  <p>
+    <%= link_to box.title3, box.url3%>
+  </p>
+</div>
+
+<% end %>
+
+<hr>
+<p>
+  <%= link_to 'new box', new_box_path %>
+</p>
