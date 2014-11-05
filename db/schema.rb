@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141030144932) do
+ActiveRecord::Schema.define(version: 20141105153940) do
+
+  create_table "boxes", force: true do |t|
+    t.string   "title1"
+    t.string   "url1"
+    t.string   "title2"
+    t.string   "url2"
+    t.string   "title3"
+    t.string   "url3"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "links", force: true do |t|
     t.string   "title"
