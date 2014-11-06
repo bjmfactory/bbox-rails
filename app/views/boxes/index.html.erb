@@ -3,6 +3,9 @@
 <% @boxes.each do |box| %>
 
 <div class="box">
+  <h2>
+    <%= link_to 'Name of Person', box_path(box.id)%>
+  </h2>
   <p>
     <%= link_to box.title1, box.url1%>
   </p>

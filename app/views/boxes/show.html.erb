@@ -1,4 +1,7 @@
 <div class="box">
+  <h2>
+    Name of Person
+  </h2>
   <p>
     <%= link_to @box.title1, @box.url1%>
   </p>
@@ -12,4 +15,5 @@
   </p>
 </div>
 
+<%= link_to 'Edit', edit_box_path(@box) %>
 <%= link_to 'Boxes', boxes_path %>
