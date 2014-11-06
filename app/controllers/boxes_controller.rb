@@ -21,6 +21,17 @@ class BoxesController < ApplicationController
   def edit
     @box = Box.find(params[:id])
   end
+
+  def update
+    @box = Box.find(params[:id])
+
+    if @box.update(box_params)
+      redirect_to @box
+    else
+      render 'edit'
+    end
+  end
+
   private
     def box_params
       params.require(:box).permit(:title1,
