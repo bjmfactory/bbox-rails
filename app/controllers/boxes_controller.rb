@@ -4,6 +4,7 @@ class BoxesController < ApplicationController
   end
 
   def new
+    @box = Box.new
   end
 
   def create
