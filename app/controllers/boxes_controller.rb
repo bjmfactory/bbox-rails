@@ -17,6 +17,9 @@ class BoxesController < ApplicationController
     @box = Box.find(params[:id])
   end
 
+  def edit
+    @box = Box.find(params[:id])
+  end
   private
     def box_params
       params.require(:box).permit(:title1,

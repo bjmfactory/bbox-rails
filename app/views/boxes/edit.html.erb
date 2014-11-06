@@ -1,0 +1,41 @@
+<h1>Edit Box</h1>
+
+<%= form_for :box, url: box_path(@box),
+method: :patch do |f| %>
+
+  <p>
+    <%= f.label :title1 %><br>
+    <%= f.text_field :title1 %>
+  </p>
+
+  <p>
+    <%= f.label :url1 %><br>
+    <%= f.text_field :url1 %>
+  </p>
+
+  <p>
+    <%= f.label :title2 %><br>
+    <%= f.text_field :title2 %>
+  </p>
+
+  <p>
+    <%= f.label :url2 %><br>
+    <%= f.text_field :url2 %>
+  </p>
+
+  <p>
+    <%= f.label :title3 %><br>
+    <%= f.text_field :title3 %>
+  </p>
+
+  <p>
+    <%= f.label :url3 %><br>
+    <%= f.text_field :url3 %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Boxes', boxes_path %>
