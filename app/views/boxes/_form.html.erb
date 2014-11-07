@@ -1,0 +1,35 @@
+<%= form_for @box do |f| %>
+  <p>
+    <%= f.label 'Title 1' %><br>
+    <%= f.text_field :title1 %>
+  </p>
+
+  <p>
+    <%= f.label 'Url 1' %><br>
+    <%= f.text_field :url1 %>
+  </p>
+
+  <p>
+    <%= f.label 'Title 2' %><br>
+    <%= f.text_field :title2 %>
+  </p>
+
+  <p>
+    <%= f.label 'Url 2' %><br>
+    <%= f.text_field :url2 %>
+  </p>
+
+  <p>
+    <%= f.label 'Title 3' %><br>
+    <%= f.text_field :title3 %>
+  </p>
+
+  <p>
+    <%= f.label 'Url 3' %><br>
+    <%= f.text_field :url3 %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
